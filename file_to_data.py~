@@ -1,0 +1,6 @@
+import subprocess
+
+file_data = subprocess.Popen(["cat", "file.txt"])
+file_data.wait()
+while not file_data.poll():
+    
